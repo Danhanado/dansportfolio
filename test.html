@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pink Rectangle</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center horizontally */
+        background-color: lightblue; /* Set light blue background color */
+        overflow-y: auto; /* Enable vertical scrollbar for entire page */
+    }
+
+    header {
+        background-color: white;
+        width: 100%;
+        height: 50px; /* Adjust height as needed */
+        position: fixed; /* Fixed position to always stay on top */
+        top: 0;
+        left: 0;
+        z-index: 2; /* Ensure it stays above other elements */
+    }
+
+    .pink-rectangle {
+        background-color: pink;
+        width: 75vw; /* 50% of viewport width */
+        height: calc(100vh - 50px); /* Limit height to viewport height minus header height */
+        position: fixed; /* Fixed position to stay anchored */
+        top: 50px; /* Anchored to the bottom of the header */
+        //left: 25vw; /* Center horizontally */
+        z-index: 1; /* Ensure it stays below the black rectangle */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .black-rectangle {
+        background-color: black;
+        width: calc(75vw + 10px); /* 50% of viewport width plus border width */
+        height: calc(100vh); /* Limit height to viewport height minus header height and additional 20px */
+        position: fixed; /* Fixed position to stay anchored */
+        top: 30px; /* Anchored to the bottom of the header and 20px below */
+       justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        z-index: 0; /* Ensure it stays below the pink rectangle */
+        transform: rotate(1deg); /* Rotate the rectangle by 1 degree */
+    }
+
+    /* Optional: Add some padding to the content inside the pink rectangle */
+    .content {
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<header></header>
+
+<main class="pink-rectangle">
+    <div class="content">
+        <!-- Content inside the pink rectangle goes here -->
+        <p>This is some example content inside the pink rectangle. If the content exceeds the dimensions of the pink rectangle, scrollbars will appear.</p>
+        <!-- Add more content to test scrolling -->
+        <p>Additional text...</p>
+    </div>
+</main>
+
+<main class="black-rectangle"></main>
+
+</body>
+</html>

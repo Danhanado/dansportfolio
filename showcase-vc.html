@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Dan's Portfolio</title>
+</head>
+<body>
+    <img class="background-palm" src="images/bg.png">
+    <div class="background-scanlines"></div>
+
+    <header>
+        <div class="header">
+            <div class="logo-container"><img class="main-logo" src="images/logo.svg"></div>
+            
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a class="active" href="showcase.html">Showcase</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="header-bottom"></div>
+
+    <main class="main-content">
+		
+        <section class="showcaseindex-section">
+		<h1><img class="vc-logo" src="images/logo_vc.svg" style="margin:25px;"></h1>
+            <content>
+			<video width="398" height="223" controls  style="float: right; margin-left: 25px;border-radius:15px;">
+				  <source src="videos/vc_overview.mp4" type="video/mp4">
+				Your browser does not support videos.
+				
+			</video>
+                <p style="display: inline;margin: auto;">
+				VirtuaCade is a QML/QT based GUI developed with the intent of creating a console-like experience for my custom arcade cabinet build, mini-pc and other future gaming devices. VCGUI is colourful, highly optimised and designed for easy readability on all types of screens.
+				</p>			
+				<p style="margin-top:25px;">
+				PegasusFE serves as the backend for reading and formating game metadata which VCGUI then filters, sorts and displays. VCGUI also extends functionality of Pegasus and QT Quick like seamless looping music, scalable highlight borders and the ability to list multiple launchable files under a single game entry.
+				</p>
+            </content>
+        </section>
+		
+        <section>
+		<h1>Additional Features</h1>
+		</section>
+		<section style="margin-left:15px;margin-right:15px;display: flex">
+			<div style="display: inline-block;margin:auto">
+				<h2 style="margin: auto;">Menu Music Jukebox</h2>
+				<p style="display: inline;color:white;">Supports an unlimited number of music tracks through a simple metadata file and even allows for seamless intro->loop music which the default QT implementation does not.</p>
+			</div>
+			<video width="398" controls style="float: right;margin-left:15px;border-radius:15px;">
+				<source src="videos/vc_jukebox.mp4" type="video/mp4">
+				Your browser does not support videos.
+			</video>
+		</section>
+		<section style="margin-left:15px;margin-right:15px;display: flex">		
+		<video width="398" controls style="float: right;margin-right:15px;border-radius:15px;">
+				  <source src="videos/vc_darkmode.mp4" type="video/mp4">
+				Your browser does not support videos.
+			</video>
+			<div style="display: inline-block;margin:auto">
+		<h2 style="margin: auto;">Dark Mode</h2>
+		<p style="display: inline;color:white;">Instantaneously toggleable night mode, can also be automatically set based on time of day.</p>
+		</div>
+		</section>
+		<section style="margin-left:15px;margin-right:15px;display:flex;">
+		<div style="display: inline-block;margin:auto">
+		<h2 style="margin: auto;">Power Controls</h2>
+		<p style="display: inline;color:white;">VCGUI can shutdown and restart your device, eliminating the need to deal directly with the operating system.</p>
+		</div>
+		<img src="images/vc/powermenu.png" style="height:200px;border-radius:15px; margin:auto;margin-left: 25px;">		
+		</section>
+		<section style="margin-left:15px;margin-right:15px;display:flex;">
+				<video width="398" controls style="float: right;margin-right:15px;border-radius:15px;">
+				  <source src="videos/vc_bganim.mp4" type="video/mp4">
+				Your browser does not support videos.
+			</video>
+		<div style="display: inline-block;margin:auto">
+		<h2 style="margin: auto;">Animated Game Backgrounds</h2>
+		<p style="display: inline;color:white;">VCGUI extends Pegasus' video function to allow for animation code to be directly executed, allowing for better performance, adaptability, image quality and file size</p>
+		</div>
+		</section>
+		<section style="margin-left:15px;margin-right:15px;display: flex">
+		<div style="display: inline-block;margin:auto">
+		<h2 style="margin: auto;">View Game Controls</h2>
+		<p style="display: inline;color:white;">Control information can be added into a game's metadata and viewed. Especially useful for arcade cabinets as the buttons tend to not resemble typical controller layout and button prompts that most games use.</p>
+		</div>
+		<video width="398" controls style="float: right;border-radius:15px;">
+				  <source src="videos/vc_controls.mp4" type="video/mp4">
+				Your browser does not support videos.
+			</video>
+		</section>
+		
+		<section style="margin-left:15px;margin-right:15px;">		
+			<video width="398"  style="border-radius:15px;" controls>
+				  <source src="videos/vc_fighting.mp4"  type="video/mp4">
+				Your browser does not support videos.
+			</video>
+			<video width="398"  style="float:right;border-radius:15px;" controls>
+				  <source src="videos/vc_racing.mp4"  type="video/mp4">
+				Your browser does not support videos.
+			</video>
+		<div style="display: inline-block;margin:auto">
+			<h2 style="margin: auto;">Genre Specific Menus</h2>
+			<p style="display: inline;color:white;">Currently includes a special menu for fighting games and racing games for steering wheel controls.</p>
+		</div>
+		</section>
+		
+		<section style="margin-left:15px;margin-right:15px;display: flex">		
+		<video height="398"  style="float: right;border-radius:15px;" loop autoplay muted>
+				  <source src="videos/vc_squiggle.mp4"  type="video/mp4">
+				Your browser does not support videos.
+			</video>
+			<video height="398"  style="float:right;margin-right:15px;border-radius:15px;" loop autoplay muted>
+				  <source src="videos/vc_bg.mp4"  type="video/mp4">
+				Your browser does not support videos.
+			</video>
+			
+			<div style="display: inline-block;margin:auto">
+			<h2 style="margin: auto;">Animations & Shader Effects</h2>
+			<p style="display: inline;color:white;">Fun animation tricks and GLSL shader effects make the interface come alive.</p>
+		</div>
+		</section>
+		
+		<section>
+		<h1>Gallery</h1>
+		<a target="_blank" href="images/vc/title.png">
+			<div class="gallery">
+				<img src="images/vc/title.png" alt="Title Screen" width="600" height="400">			  
+				 <div class="desc">Title Screen</div>
+			</div>
+		</a>
+			<a target="_blank" href="images/vc/main.png">
+			<div class="gallery">
+				<img src="images/vc/main.png" alt="Home Menu" width="600" height="400">			  
+				 <div class="desc">Home Menu</div>
+			</div>
+		</a>
+
+			<a target="_blank" href="images/vc/game.png">
+			<div class="gallery">
+				<img src="images/vc/game.png" alt="Game Menu" width="600" height="400">			  
+				 <div class="desc">Game Menu</div>
+			</div>
+		</a>
+			<a target="_blank" href="images/vc/details.png">
+			<div class="gallery">
+				<img src="images/vc/details.png" alt="Game Details" width="600" height="400">			  
+				 <div class="desc">Game Details</div>
+			</div>
+		</a>
+		</a>
+			<a target="_blank" href="images/vc/controls.png">
+			<div class="gallery">
+				<img src="images/vc/controls.png" alt="Game Controls" width="600" height="400">			  
+				 <div class="desc">Game Controls</div>
+			</div>
+		</a>
+		<a target="_blank" href="images/vc/titledark.png">
+			<div class="gallery">
+				<img src="images/vc/titledark.png" alt="Title Screen (Dark)" width="600" height="400">			  
+				 <div class="desc">Title Screen (After Dark)</div>
+			</div>
+		</a>
+		<a target="_blank" href="images/vc/collections.png">
+			<div class="gallery">
+				<img src="images/vc/collections.png" alt="Collections Menu" width="600" height="400">			  
+				 <div class="desc">Collections Menu</div>
+			</div>
+		</a>
+		<a target="_blank" href="images/vc/fighting.png">
+			<div class="gallery">
+				<img src="images/vc/fighting.png" alt="Fighting Game Menu" width="600" height="400">			  
+				 <div class="desc">Fighting Game Menu</div>
+			</div>
+		</a>
+		<a target="_blank" href="images/vc/race1.png">
+			<div class="gallery">
+				<img src="images/vc/race1.png" alt="Racing Category Menu" width="600" height="400">			  
+				 <div class="desc">Racing Category Menu</div>
+			</div>
+		</a>
+			<a target="_blank" href="images/vc/race2.png">
+			<div class="gallery">
+				<img src="images/vc/race2.png" alt="Racing Game Menu" width="600" height="400">			  
+				 <div class="desc">Racing Game Menu</div>
+			</div>
+		</a>
+		
+		</a>
+			<a target="_blank" href="images/vc/mock1.png">
+			<div class="gallery">
+				<img src="images/vc/mock1.png" alt="First Mock-Up" width="600" height="400">			  
+				 <div class="desc">First Mock-Up</div>
+			</div>
+		</a>
+		</a>
+			<a target="_blank" href="images/vc/mock2.png">
+			<div class="gallery">
+				<img src="images/vc/mock2.png" alt="Mock-Up 2" width="600" height="400">			  
+				 <div class="desc">Mock-Up 2</div>
+			</div>
+		</a>
+		</a>
+			<a target="_blank" href="images/vc/mock3.png">
+			<div class="gallery">
+				<img src="images/vc/mock3.png" alt="Mock-Up 3" width="600" height="400">			  
+				 <div class="desc">Mock-Up 3</div>
+			</div>
+		</a>
+		</a>
+			<a target="_blank" href="images/vc/titlesq.png">
+			<div class="gallery">
+				<img src="images/vc/titlesq.png" alt="Title Screen (4:3)" width="600" height="400">			  
+				 <div class="desc">Title Screen (4:3)</div>
+			</div>
+		</a>
+		</a>
+			<a target="_blank" href="images/vc/mainwide.png">
+			<div class="gallery">
+				<img src="images/vc/mainwide.png" alt="Home Menu (Wide)" width="600" height="400">			  
+				 <div class="desc">Home Menu (Wide)</div>
+			</div>
+		</a>
+		</section>
+    </main>
+    
+    <main class="main-backing"></main>
+
+    <footer>
+        <div class="footer">
+            <p>Daniel McLean (2024)</p>
+        </div>
+        <div class="footer-bottom"></div>
+    </footer>
+</body>
+</html>

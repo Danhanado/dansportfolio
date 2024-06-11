@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "navBold";
+    src: url("fonts/SeuratProN-B.otf");
+}
+
+body {
+    background-color: #00dafa;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+	font-family: "navBold";
+
+}
+
+.background-palm {
+    position: fixed;
+    z-index: -10;
+    height: calc(100% - 40px);
+	transform: translateY(100px);
+}
+
+.background-scanlines {
+    position: fixed;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 0px,
+        rgba(0, 0, 0, 0) 1px,
+        rgba(0, 0, 0, 1) 1px,
+        rgba(0, 0, 0, 1) 2px
+    );
+    mix-blend-mode: overlay;
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+    position: static;
+	overflow: hidden;
+}
+
+.header {
+    background: white;
+    color: #f1f1f1;
+    font-size: 24px;
+    height: 80px;
+    min-height: 5vh;
+    max-height: 10vh;
+    padding: 1vh;
+    margin: 0;
+    position: relative;
+	    z-index: 100;
+
+}
+
+.header .logo-container {
+    height: 100%;
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header .logo-container .main-logo {
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    height: 100%;
+    width: 70%;
+    display: flex;
+}
+
+li {
+    float: left;
+    height: auto;
+    width: 25%;
+    margin: auto;
+    margin-left: 1vw;
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+	justify-content: center;
+	transition-duration: 0.2s;
+
+}
+
+li a {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "navBold";
+}
+
+li:hover {
+    background-color: #111;
+}
+
+li:hover a {
+    color: white;
+}
+
+li:active{
+  background-color: #ff5df5;
+}
+
+h1 {
+    font-family: "navBold";
+}
+
+h2{
+		color: white;
+}
+
+.header-bottom {
+    background-color: black;
+    width: 102%;
+    height: 50px;
+    transform: rotate(-0.4deg) translateY(-40px) translateX(-1%);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+.main-backing {
+    background-color: black;
+    width: 1000px;
+	max-width: 90%;
+    min-width: 55%;
+    height: 110vh; /* Increased height to prevent cut off due to rotation */
+    position: fixed;
+    top: -5vh; /* Adjust top to prevent cutting off */
+    left: 50%;
+    transform: translateX(-50%) rotate(1deg);
+    z-index: -9;
+}
+
+.main-content {
+  max-width: 75%;
+    min-width: 50%;
+    width: 1000px;
+    margin: auto;
+    padding: 0;
+    background-color: #ff5df5;
+    z-index: -8;
+
+}
+.main-content section:nth-child(even){
+   	margin: 0;
+    background-color: #ff00eb;
+   
+}
+.main-content section{
+	overflow: hidden;
+	padding: 45px;
+	margin: 0;
+
+}
+
+div.gallery {
+  margin: 5px;
+  border: 10px solid black;
+  float: left;
+  width: 180px;
+  border-radius: 15px;
+}
+
+
+div a {
+	width: 100%;
+  color: black;
+}
+
+div.gallery:hover {
+  border: 10px solid white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+	background-color: white;
+  padding: 15px;
+  height: 75px;
+  text-align: center;
+}
+
+/*
+.main-content section div{
+background-color: black;
+width: 110%;
+height:100px;
+z-index:100;
+transform: rotate(3deg) translateX(-5%);
+}*/
+.main-content h1{
+	color: white;
+	font-size: 60px;
+	margin: 0;
+	text-align: center;
+
+}
+
+.main-content .float-left{
+  text-align: left;
+	
+}
+.main-content .float-left h1{
+  text-align: left;
+	
+}
+.main-content content h1{
+	color: white;
+	font-size: 60px;
+	margin: 0;
+
+}
+.main-content content p{
+	color: white;
+	font-size: 18px;
+	margin: 0;
+}
+
+.vc-button-container a{
+	width: 75%;
+	margin: auto;
+
+}
+.vc-button{
+	width: 100%;
+	margin: auto;
+	margin-top: 50px;
+	height: 75px;
+	border-style: solid;
+	 border-width: 5px;
+	border-radius: 30px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+  	font-size: 24px;
+	font-family: "navBold";
+	background-color: #a800ff;
+	color: white;
+}
+
+.vc-button:hover {
+ color: black;
+  background-color: white;
+}
+
+
+
+footer {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
+    background: white;
+    color: #f1f1f1;
+    font-size: 24px;
+    height: 50px;
+
+    padding: 1vh;
+    margin: 0;
+}
+
+.footer {
+    background: white; 
+    height: 50px;
+    padding: 1vh;
+    margin: 0;
+	display: flex;
+    justify-content: center;
+}
+
+.footer p{
+	color: black;
+    font-size: 16px;
+	margin: auto;
+}
+
+.footer-bottom {
+    background-color: black;
+    width: 102%;
+    height: 50px;
+    transform: rotate(0.4deg) translateY(-40px) translateX(-1%);
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 100%;
+	z-index: 9;
+    margin-bottom: -50px;
+}
